@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkblue;
+    background: url(Rectangle\ \(1\).png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Red Hat Text";
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+.pic2 {
+    position: absolute;
+}
+
+.pic3 {
+    position: absolute;
+    bottom: 0%;
+}
+
+.time {
+    color: #8385A9;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 5.919px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 7.5px;
+    text-transform: uppercase;
+}
+
+.timer {
+    display: flex;
+    gap: 70px;
+}
+
+.timer-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.socmedia {
+    width: 136px;
+    height: 24px;
+    bottom: 60px;
+    left: 45%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.socmedia:hover {
+    background-color: #FB5E84;
+}
+
+.bck {
+    display: flex;
+    z-index: 1;
+}
+
+
+.time-for {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    bottom: 38%;
+    color: #FB5E84;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -2.4px;
+
+}
+
+.line {
+    opacity: 0.1;
+    background: #000;
+    width: 148px;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    bottom: 43%;
+
+}
+
+
+@media (max-width: 815px) {
+    .text {
+        font-weight: 700;
+        letter-spacing: 6.136px;
+    }
+
+    .bck {
+        width: 70px;    
+      height: 71px;
+    }
+
+    .time-for {
+        font-size: 36px;
+    }
+
+    .line {
+        width: 70px;
+        height: 0.473px;
+        bottom: 42.5%;
+    }
+
+    .time {
+        font-size: 7px;
+        width: 70px;
+        height: 12px;
+        letter-spacing: 2.959px;
+    }
+
+    .timer {
+        gap: 16px;
+    }
+}
